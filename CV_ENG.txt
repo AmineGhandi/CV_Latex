@@ -1,0 +1,140 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{purple}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\rfoot{Page \thepage \hspace{1pt} of 2}
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+\setlength{\hintscolumnwidth}{2.9cm}   
+\usepackage{graphicx}
+\usepackage{fontawesome}
+% if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for thehttps://www.overleaf.com/project/61d49fd616ff4704140a4fef 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{GHANDI}{Amine}
+\title{Development and applications design Engineer}                               % optional, remove / comment the line if not wanted
+\address{Casablanca, Lot l’adarissa N5 sidi maarouf }{20520 Casablanca}{Morocco}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+(212) 6 80 18 54 89}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+(212)699284934}
+%\phone[fax]{+3~(456)~789~012}
+\email{Amineghandi23@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{amine-ghandi-13b510187}
+\social[github]{AmineGhandi}
+\social[stackoverflow]{14960219/amine-ghandi}
+% optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+% optional, remove / comment the line if not wanted
+\photo[100pt][1pt]{me2}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Professional experience}
+\cventry{ 17 January 2022 -- 18 april 2022 }{E-Solution}{}{CASABLANCA}{Laravel/PHP full stack developer}{Developing websites and webapps  made in Html, Css, Javascript, Php/Laravel and Ajax.}
+\cventry{ 2 November 2021 -- 17 January 2022}{Freelance}{}{CASABLANCA}{Freelancer/Full stack Developer/Designer}{Developing websites/web apps, and minimalistic logos and vector arts, also UI/UX designing.}
+\cventry{14 September 2021 -- 2 November 2021}{INVOLYS}{}{CASABLANCA}{Quality assurance engineer}{Interface testing and reporting of bugs, and regression testing.}
+\cventry{14 Janvier 2021 -- 5 Mars 2021}{BLINK Agency}{}{CASABLANCA}{Laravel/PHP full stack developer}{Developing websites and webapps used as  tools that help in planifications and audit
+monitoring. made in Html, Css, Javascript, Php and Laravel.}
+\cventry{2 Fevrier 2020 -- 18 Mars}{LEONI Wiring Systems}{}{BOUSKOURA}{Developper intern/Assistant technician}{Developing web applications to manage action by pinging time made by c# and ASP.NET.}
+
+\section{Education}
+
+\cventry{2020 -- 2021}{Faculty of Sciences and Techniques SETTAT}{FSTS}{}{}{Application Design and Development
+Engineering programe (LICDA)}
+\cventry{Juin 2019 -- Juillet 2019}{1337}{}{Benguerir}{Successfully passing 1337 pool
+}{Association of French origin}
+\cventry{2018 -- 2020}{Specialized Institute Of Applied Technology NTIC}{}{Casablanca}{}{Bachelor's degree computer science}  % arguments 3 to 6 can be left empty
+\cventry{2016 --  2017}{OULED HRIZ High school}{}{Berrechid}{}{Baccalaureate in Physical science}
+
+\section{Projets}
+
+\cventry{\emph{AlphaStamps}}{A web application with an authentication system, which allows you to create and / or modify an invoicing procedure with the possibility of adding a digital stamp}{}{}{}{%
+	%
+	\begin{itemize}%
+		\item Tools used:  Laravel, HTML, Bootsrap, JavaScript, CSS, PHP, Mysql, Postgresql, Jquery, Git, Shell, Appache.
+\end{itemize}
+}
+
+\cventry{\emph{Armadilo}}{A web application with authentication, which manages
+users with the ability to print and send e-mails}{}{}{}{%
+	%
+	\begin{itemize}%
+		\item Tools used: : Laravel, CSS, HTML, Bootsrap, JS, PHP, Mysql, Appache.
+	\end{itemize}
+}
+
+\cventry{\emph{You.Conv}}{A website that allows you to convert videos from
+YouTube to Mp3 or Mp4}{}{}{}{%
+	%
+	\begin{itemize}%
+		\item Tools used: HTML, CSS, JS, Bootsrap, NodeJs.
+	\end{itemize}
+}
+
+
+\section{Technical knowledge}
+\cventry{\emph{Programing languages}}{ HTML, CSS, JavaScript, PHP, Latex, Python, Arduino, C#, Java.}{}{}{}{}
+\cventry{\emph{Frameworks}}{Laravel, Bootstrap, Jquery, Angular, .NET, Apache.}{}{}{}{}
+\cventry{\emph{Software}}{Microsoft Office, Photoshop, Illustrator. }{}{}{}{}
+\cventry{\emph{Databases}}{SQL Server, MySQL Server, PostgreSQL, Oracle DB.}{}{}{}{}
+\cventry{\emph{Modeling methods}}{Merise, UML}{}{}{}{}
+\cventry{\emph{Source control}}{Git, GitHub, Bitbucket}{}{}{}{}
+\section{Languages}
+\cvitemwithcomment{Arab}{Native language}{Read -- Spoken -- Writen}
+\cvitemwithcomment{English}{Fluent}{Read -- Spoken -- Writen}
+\cvitemwithcomment{French}{Fluent}{Read -- Spoken -- Writen}
+%\newpage
+
+
+\section{Interests}
+\cvitemwithcomment{Hobbies}{Website creation, logo design, and strategic and adventure video games}{}
+\cvitemwithcomment{Sports}{Karate,Taekwondo, Basketball}{}
+        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
